@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> This Project was made to apply advance React Techniques such as compound components. </p>
+<p align="center"> This Project was made to apply advance React Techniques . </p>
     <br> 
 </p>
 
