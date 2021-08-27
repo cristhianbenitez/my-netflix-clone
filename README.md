@@ -1,6 +1,6 @@
 
 <h1 align="center">My Netflix Clone</h1>
-
+<img src="https://i.imgur.com/KOf0OLx.png" alt='cristhian netflix clone'></img>
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
