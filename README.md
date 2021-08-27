@@ -1,5 +1,5 @@
 
-<h3 align="center">My Netflix Clone</h3>
+<h1 align="center">My Netflix Clone</h1>
 
 <div align="center">
 
