@@ -20,7 +20,13 @@
 
   This Project of doing a Netflix clone was made with the purpose of learning.
 
-   The project mostly consist in building an App with React.js, using Large React based Architecture, And, making use of compound components, styled components , holding data firebase database, and using firebase authentication.
+   The project mostly consist in building an App with React.js, 
+   -  Using Large React based Architecture
+   -  Making use of compound components.
+   -  Using styled components.
+   -  Holding data firebase database and authentication.
+   -  Writing reusable components.
+   -  Writing custom hooks.  
 <br/>
 
 
