@@ -30,8 +30,3 @@
 
 ---
 
-## Acknowledgements
-
-- [The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
-- [Karl Hadwen](https://twitter.com/karlhadwen)
-
