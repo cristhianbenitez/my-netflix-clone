@@ -16,3 +16,7 @@ updates:
        # Allow both direct and indirect updates for all packages
       - dependency-type: "all"
 
+steps:
+  - uses: ahmadnassri/action-dependabot-auto-merge@v2
+    with:
+      github-token: ${{ secrets.mytoken }}
