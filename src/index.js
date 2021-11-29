@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { GlobalStyles } from './global-styles';
-import { App } from './app';
+import { App } from './App';
 import { FirebaseContext } from './context/firebase';
+import { GlobalStyles } from './global-styles';
 
 const config = {
   apiKey: 'AIzaSyD4-bcFZbgv-jo06suD80-vovlgqguyQxs',
@@ -12,7 +12,7 @@ const config = {
   storageBucket: 'netflix-clone-5548d.appspot.com',
   messagingSenderId: '1044699703093',
   appId: '1:1044699703093:web:2d9f45d1165cda0a49ce7c',
-  measurementId: 'G-PGZXGBF4WX',
+  measurementId: 'G-PGZXGBF4WX'
 };
 
 const firebase = window.firebase.initializeApp(config);
