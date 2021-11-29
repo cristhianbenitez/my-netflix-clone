@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
 import Fuse from 'fuse.js';
-import { Card, Loading, Header, Player } from '../components';
+import React, { useContext, useEffect, useState } from 'react';
+import { Card, Header, Loading, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import { FirebaseContext } from '../context/firebase';
-import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
+import { SelectProfileContainer } from './profiles';
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState('series');
@@ -28,7 +28,7 @@ export function BrowseContainer({ slides }) {
 
   useEffect(() => {
     const fuse = new Fuse(slideRows, {
-      keys: ['data.description', 'data.title', 'data.genre'],
+      keys: ['data.description', 'data.title', 'data.genre']
     });
     const results = fuse.search(searchTerm).map(({ item }) => item);
 
@@ -37,19 +37,19 @@ export function BrowseContainer({ slides }) {
     } else {
       setSlideRows(slides[category]);
     }
-  }, [searchTerm]);
+  }, [category, searchTerm, slideRows, slides]);
 
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
 
-      <Header src='joker1' dontShowOnSmallViewPort>
+      <Header src="joker1" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo
               to={ROUTES.HOME}
-              src='/images/misc/logo.svg'
-              alt='Netflix'
+              src="/images/misc/logo.svg"
+              alt="Netflix"
             />
             <Header.Link
               active={category === 'series' ? 'true' : 'false'}
